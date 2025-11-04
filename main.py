@@ -1,8 +1,8 @@
 import os
 import time
 
-# 🎞 Google Drive video link (direct link format)
-VIDEO_URL = "https://drive.google.com/uc?export=download&id=1TDKD9ZrzdhqcjUqai5-TeHRadmVsLKdg"
+# 🎞 Dropbox video link (direct link form)
+VIDEO_URL = "https://www.dropbox.com/scl/fi/ym9z7i7qupuf2vc1x8hhb/ram.mp4.mp4?rlkey=io2vz85n3rh6psjdh0g15afqi&st=ut3bo8im&dl=1"
 
 # 🔑 YouTube Stream Key (Render Environment Variable se lega)
 YOUTUBE_STREAM_KEY = os.environ.get("YOUTUBE_STREAM_KEY")
