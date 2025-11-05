@@ -1,1 +1,1 @@
-worker: bash install.sh
+worker: python main.py
