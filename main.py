@@ -8,5 +8,5 @@ if not YOUTUBE_STREAM_KEY:
     raise SystemExit("⚠️ Set YOUTUBE_STREAM_KEY in Environment Variables!")
 
 while True:
-    os.system(f'ffmpeg -re -stream_loop -1 -i "{VIDEO_URL}" -c:v libx264 -c:a aac -f flv "rtmp://a.rtmp.youtube.com/live2/{YOUTUBE_STREAM_KEY}"')
+    os.system(f'ffmpeg -re -stream_loop -1 -i "{VIDEO_URL}" -vcodec libx264 -preset veryfast -maxrate 3000k -bufsize 6000k -pix_fmt yuv420p -g 50 -c:a aac -b:a 160k -f flv "rtmp://a.rtmp.youtube.com/live2/{YOUTUBE_STREAM_KEY}"')
     time.sleep(5)
