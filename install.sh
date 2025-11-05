@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -e
 
-# Update and install ffmpeg
+# 🛠 Install ffmpeg
 apt-get update -y
 apt-get install -y ffmpeg
 
-# Install Python dependencies
-pip install --no-cache-dir -r requirements.txt
+# 🎯 Install Python dependencies
+pip install -r requirements.txt
 
-# Run Python stream script
+# 🚀 Run the stream
 python main.py
