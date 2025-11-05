@@ -5,8 +5,8 @@ set -e
 apt-get update -y
 apt-get install -y ffmpeg
 
-# 🎯 Install Python dependencies
+# 🐍 Install Python requirements
 pip install -r requirements.txt
 
-# 🚀 Run the stream
+# 🚀 Start the stream
 python main.py
